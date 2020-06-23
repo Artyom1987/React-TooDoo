@@ -1,16 +1,13 @@
 .task-list li {
     padding-top: 10px;
     padding-bottom: 10px;
-    cursor: pointer;
+
     
 }
 .task-list li:not(:last-child){
     border-bottom: 2px solid   #cccccc ;
 }
-.task-done{
-    text-decoration: line-through;
-    font-weight: bold;
-}
+
 .container{
     height: 100vh;
     display: flex;
@@ -24,8 +21,27 @@
     padding: 5px;
     box-shadow: 8px 10px 25px 3px rgba(0,0,0,0.51)
 }
-ul.task-list{
+ul.task-list,ul.tabs-select{
     list-style-type:none;
     margin: 0;
     padding: 0;
+}
+.task-delete{
+    text-decoration: line-through;
+    color: #cccccc;
+}
+.svg-inline--fa{
+    cursor: pointer;
+}
+.tabs-select{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-around;
+}
+
+.tab-select-item{
+    flex:1;
+    text-align: center;
+    cursor:pointer;
+
 }
